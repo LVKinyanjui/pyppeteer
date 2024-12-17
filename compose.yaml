@@ -1,0 +1,9 @@
+services:
+  chrome-pyppeteer:
+    image: doubledie/chrome-pyppeteer
+    build:
+      context: .
+    container_name: chrome-server
+    volumes:
+      - .:/app
+    
