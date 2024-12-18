@@ -3,6 +3,8 @@ services:
     image: doubledie/chrome-pyppeteer
     build:
       context: .
+      platforms: 
+        - linux/amd64
     container_name: chrome-server
     volumes:
       - .:/app
